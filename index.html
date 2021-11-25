@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <h1 class="text-center mt-5 text-decoration-underline">Moringa <span>Bank</span> Account</h1>
+
+      <div>
+        <div class="col mt-5">
+          <h4>Register New Account</h4>
+          <form id="form">
+            <div class="row">
+              <div class="form-group col-md-5">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group col-md-5">
+                <label for="deposit" class="form-label">Initial Deposit</label>
+                <input type="number" class="form-control" id="firstDeposit">
+              </div>
+              <div class="col-md-1">
+               <button class="btn text-uppercase text-white" type="submit">Submit</button>
+              </div>
+             </div>
+            </div>
+        </form>
+          <div class="col mt-5">
+            <h4>Deposit or Withdraw Funds</h4>
+          <form id="depo">
+            <div class="row">
+              <div class="form-group col-md-5">
+                <label for="name" class="form-label">Deposit Amount</label>
+                <input type="text" class="form-control" id="secondDeposit">
+              </div>
+              <div class="form-group col-md-5">
+                <label for="deposit" class="form-label">Withdraw Amount</label>
+                <input type="text" class="form-control" id="withdraw">
+              </div>
+              <div class="col-md-1">
+                <button class="btn text-uppercase text-white" type="submit">Submit</button>
+              </div>                 
+            </div>
+          </form>
+
+        <div id="show-balance">
+          <h4 class="text-center mt-4">Name:<span class="name"></span></h4>
+          <h5 class="text-center mt-3">Current Balance: <span class="balance">ksh</span></h5>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
